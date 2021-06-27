@@ -17,5 +17,11 @@ const typeDefs = gql`
         savedBooks: [bookSchema]
     }
 
+    type Query {
+        getSingleUser:
+    }
 
-`
+
+`;
+
+module.exports = typeDefs;
