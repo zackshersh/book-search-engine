@@ -9,6 +9,14 @@ const resolvers = {
                 $or: [{ _id: user ? user._id : params.id }, { username: params.username }],
               });
         },
+        getAllUsers: async () => {
+            return User.find({})
+        },
+        getMe: async (parent, args, context) => {
+            if (context.user) {
+                return User.findOne({ _id: context.user._id}).populate('savedBooks');
+            }
+        }
     },
     Mutation: {
         createUser: async (parent, { body }) => {
