@@ -8,7 +8,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 
 
-const client = new ApollotClient({
+const client = new ApolloClient({
   url:'/graphql',
   cache: new InMemoryCache(),
 })

@@ -17,7 +17,7 @@ module.exports = {
     }
 
     if (!token) {
-      throw new AuthenticationError('error')
+      throw req;
     }
 
     // verify token and get user data out of it
