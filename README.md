@@ -2,7 +2,7 @@
 
 ## Application Functionality 
 
-This application uses google book's API to retrieve books and allow users to save those books to their accounts. This application runs on expressjs and react using GraphQL to communicate with it's Mongoose Database responsible for storing all user data.
+This application uses google book's API to retrieve books and allow users to save those books to their accounts. This application runs on expressjs and react using GraphQL to communicate with its MongoDB Database responsible for storing all user data.
 
 ## My Role
 
